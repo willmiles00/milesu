@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>MilesU</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo.png" height="50" alt="logo" srcset="
+        images/logo1x.png 1x,
+        images/logo2x.png 2x,
+        images/logo3x.png 3x,
+      "/>
+		<h1>MilesU</h1>
+        <div id="hamburger"><a href="#closex">&#9776;</a></div>
+        <div id="phone"><a href="tel:8018638888">801-863-8888</a></div>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <div id="closex"><a href="#hamburger">x</a></div>
+        <ul>
+        <li><a href="#">Students</a>
+        <li><a href="#">Academics</a></li>
+        <li class="active"><a href="#">Apply</a></li>
+        <li><a href="#">Tuition</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <picture class="hero">
+            <img src="images/students.jpeg" width="1600" height="600">
+        </picture>
+        
+        <h1>Apply</h1>
+        <form action="thanks.html" class="my-form" autocomplete="on" method="get">
+            <h3>Personal Information</h3>
+            <label for="">First Name: 
+                <input type="text" name="fname" autocomplete="given-name" required title="First Name Here">
+            </label>
+
+            <label for="">Last Name: 
+                <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here">
+            </label>
+
+            <label for="">Email: 
+                <input type="email" name="email" autocomplete="email" required title="Your Email Please">
+            </label>
+
+            <label for="">Cell Phone: 
+                <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Here">
+            </label>
+
+
+            <label for="">Street Address: 
+                <input type="text" name="phone" autocomplete="street-address"  title="Street Address Here">
+            </label>
+
+            <label for="">City: 
+                <input type="text" name="phone" autocomplete="address-level2"  title="City Here">
+            </label>
+
+            <label for="">State: 
+                <input type="text" name="phone" autocomplete="address-level1"  title="State Here">
+            </label>
+
+            <label for="">Zip Code: 
+                <input type="text" name="phone" autocomplete="postal-code"  title="Zip Code Here">
+            </label>
+
+            <h3>What is the best method to contact you?</h3>
+            <label><input type="radio" name="text" value="text">Text Message</label>
+            <label><input type="radio" name="call" value="call">Phone Call</label>
+            <label><input type="radio" name="email" value="email">E-mail</label>
+
+
+            <h3>Previous School Information</h3>
+            <label for="schoolType">School Type:</label>
+                <select name="schoolType">
+                    <option value="No Selection Made">Please Select</option>
+                    <option value="High School">High School</option>
+                    <option value="College">College</option>
+                    <option value="University">University</option>
+                    <option value="Other">Other</option>
+                </select>
+
+            <label for="gradDate">Graduation date:</label>
+            <input type="date" name="gradDate" value="2018-07-22" min=1969-01-01" max="2023-12-31" />
+
+
+            <h3>Education Completed</h3>
+
+            <label><input type="checkbox" name="GED">GED</label>
+            <label><input type="checkbox" name="HS">High School Diploma</label>
+            <label><input type="checkbox" name="associates">Associates Degree</label>
+
+           
+
+            <h3>Create a login</h3>
+            <label class="username">UserName (6 or more)<input type="text" pattern="[A-Za-z]" required minlength="5" maxlength="10" title="Please Enter a UserName that is 5-10 uppercase/lowercase letters"></label>
+
+            <label>Password (6+ characters) <input type="password" minlength="6" name="password" required pattern=".*" title="your password must be at least 6 characters PLEASE"></label>
+
+
+            <input type="submit" value="Get Enrolled">
+        </form>
+
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2023 Will Miles. All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
